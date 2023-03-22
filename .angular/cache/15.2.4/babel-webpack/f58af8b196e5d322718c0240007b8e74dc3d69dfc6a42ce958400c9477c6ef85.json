@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var VoteType = /*#__PURE__*/(() => {\n  (function (VoteType) {\n    VoteType[VoteType[\"UPVOTE\"] = 0] = \"UPVOTE\";\n    VoteType[VoteType[\"DOWNVOTE\"] = 1] = \"DOWNVOTE\";\n  })(VoteType || (VoteType = {}));\n  return VoteType;\n})();","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
