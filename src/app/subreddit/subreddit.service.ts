@@ -10,11 +10,11 @@ export class SubredditService {
   constructor(private http: HttpClient) { }
 
   getAllSubreddits(): Observable<Array<SubredditModel>> {
-    return this.http.get<Array<SubredditModel>>('http://34.125.77.251:8080/api/subreddit');
+    return this.http.get<Array<SubredditModel>>('/spring-api/api/subreddit');
   }
 
   createSubreddit(subredditModel: SubredditModel): Observable<SubredditModel> {
-    return this.http.post<SubredditModel>('http://34.125.77.251:8080/api/subreddit',
+    return this.http.post<SubredditModel>('/spring-api/api/subreddit',
       subredditModel);
   }
 }

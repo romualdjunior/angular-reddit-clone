@@ -11,6 +11,6 @@ export class VoteService {
   constructor(private http: HttpClient) { }
 
   vote(votePayload: VotePayload): Observable<any> {
-    return this.http.post('http://34.125.77.251:8080/api/votes/add', votePayload);
+    return this.http.post('/spring-api/api/votes/add', votePayload);
   }
 }

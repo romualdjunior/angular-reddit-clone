@@ -12,24 +12,24 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getAllPosts(): Observable<Array<PostModel>> {
-    return this.http.get<Array<PostModel>>('http://34.125.77.251:8080/api/posts');
+    return this.http.get<Array<PostModel>>('/spring-api/api/posts');
   }
 
   
   getPostsBySubreddit(subreddit:number): Observable<Array<PostModel>> {
-    return this.http.get<Array<PostModel>>('http://34.125.77.251:8080/api/posts/postBySubreddit/'+subreddit);
+    return this.http.get<Array<PostModel>>('/spring-api/api/posts/postBySubreddit/'+subreddit);
   }
 
 
   createPost(postPayload: CreatePostPayload): Observable<any> {
-    return this.http.post('http://34.125.77.251:8080/api/posts/add', postPayload);
+    return this.http.post('/spring-api/api/posts/add', postPayload);
   }
 
   getPost(id: number): Observable<PostModel> {
-    return this.http.get<PostModel>('http://34.125.77.251:8080/api/posts/' + id);
+    return this.http.get<PostModel>('/spring-api/api/posts/' + id);
   }
 
   getAllPostsByUser(name: string): Observable<PostModel[]> {
-    return this.http.get<PostModel[]>('http://34.125.77.251:8080/api/posts/by-user/' + name);
+    return this.http.get<PostModel[]>('/spring-api/api/posts/by-user/' + name);
   }
 }
