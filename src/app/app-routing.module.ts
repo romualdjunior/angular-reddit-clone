@@ -9,7 +9,6 @@ import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subred
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 import { AuthGuard } from './auth/auth.guard';
-import { HomeFilterComponent } from './home-filter/home-filter.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
